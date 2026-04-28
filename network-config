@@ -1,0 +1,15 @@
+network:
+  version: 2
+  ethernets:
+    eth0:
+      dhcp4: true
+      dhcp6: true
+      optional: true
+  wifis:
+    wlan0:
+      dhcp4: true
+      regulatory-domain: "IN"
+      access-points:
+        "Galaxy_A26":
+          password: "206d84b7541a6a53460614621322ce71aa1a509c6474714625304185eb3c9185"
+      optional: true
