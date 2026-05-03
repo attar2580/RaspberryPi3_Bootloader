@@ -1,3 +1,9 @@
+/*
+TITLE: main.c
+AUTHOR: FARDEEN
+DESCRIPTION: main entry point for bootloader firmware
+*/
+
 #include <stdint.h>
 
 /* BCM2837 peripheral base for MMIO. */
