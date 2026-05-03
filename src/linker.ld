@@ -3,6 +3,7 @@ ENTRY(_start)
 
 SECTIONS
 {
+  /*Location counter (.) set to 0x80000 here - cursor starts from this address location and moves forward in sequence*/
   . = 0x80000;
 
   /*_start (boot.s entry)*/
