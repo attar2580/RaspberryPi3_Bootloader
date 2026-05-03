@@ -85,7 +85,7 @@ static uint64_t read_current_el(void)
 __attribute__((noreturn)) void main(void)
 {
   uart_init();
-  uart_puts("RPi3 BCM2837 Bootloader\n");
+  uart_puts("Core 1/2/3 parked\nInitializing Core 0...\nRPi3 BCM2837 Bootloader\n");
   /* Print current exception level (EL0-EL3). */
   uint64_t el = read_current_el() >> 2U;
   uart_puts("Exception Level: EL");
