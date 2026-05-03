@@ -52,5 +52,22 @@ sections: $(ELF)
 symbols: $(ELF)
 	$(NM) -n $<
 
+qemu:
+	qemu-system-aarch64 \
+		-M raspi3b \
+		-kernel $(IMG) \
+		-serial null \
+		-serial stdio \
+		-display none
+
+qemu-gdb:
+	qemu-system-aarch64 \
+		-M raspi3b \
+		-kernel $(IMG) \
+		-serial null \
+		-serial stdio \
+		-display none \
+		-s -S
+
 clean:
 	rm -rf $(BUILD_DIR)
